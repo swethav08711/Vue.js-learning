@@ -5,15 +5,17 @@
       @click.self="handleClick"
       :class="theme === 'sale' && 'sale'"
     >
-      <h1>{{ header }}</h1>
-      <p>{{ text }}</p>
+      <slot> shows when no content is given</slot>
+      <div class="actions">
+        <slot name="link"></slot>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
 export default {
-  props: ["header", "text", "theme"],
+  props: ["theme"],
   methods: {
     handleClick() {
       this.$emit("close");
@@ -22,7 +24,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style>
 .modal {
   width: 400px;
   padding: 20px;
@@ -46,6 +48,29 @@ h1 {
   color: white;
 }
 .modal.sale > h1 {
+  color: white;
+}
+.modal .actions {
+  display: flex;
+}
+.modal .actions a {
+  color: #333;
+  padding: 8px;
+  border: 1px solid #eee;
+  border-radius: 4px;
+  text-decoration: none;
+  margin: 10px;
+}
+.modal.sale h1 {
+  color: white;
+}
+.modal.sale {
+  background: crimson;
+}
+.modal.sale .actions {
+  color: white;
+}
+.modal.sale .actions a {
   color: white;
 }
 </style>
