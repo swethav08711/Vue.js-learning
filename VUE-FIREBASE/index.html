@@ -1,0 +1,68 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://unpkg.com/vue@3.0.2"></script>
+    <style>
+      .box {
+        padding: 100px 10px;
+        background: teal;
+        color: white;
+        width: 300px;
+        display: inline-block;
+        margin: 20px;
+        text-align: center;
+      }
+      .fav{
+        background: pink;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      <!-- <button v-on:click="increaseAge">Increase Age</button>
+      <button v-on:click="age--">Increase Age</button>
+      <div @click="age+=5">increase by 5</div> 
+      <div @click="changeTitle">change title</div>
+      pass data from here
+     <div @click="changeTitle('swetha v')">Change book title</div>
+      -->
+      <!-- attribute binding -->
+      <a :href="url">Link</a>
+      <!--  -->
+      <hr />
+      <div v-if="showBox">
+        <h2>{{title}} - {{age}}</h2>
+      </div>
+
+      <button @click="toggleBtn">
+        {{showBox ? 'show Books' : 'hide Books'}}
+      </button>
+
+      <button v-show="showBox">Currently showing books</button>
+      <hr />
+      <div class="box" @mouseover="handleEvents($event,5)">
+        mouseover (enter)
+      </div>
+      <div class="box" @mouseleave="handleEvents">mouseLeave</div>
+      <div class="box" @dblclick="handleEvents">Double Click</div>
+      <div class="box" @mousemove="handleMousemove">
+        position - {{x}} - {{y}}
+      </div>
+
+      <hr />
+
+      <div v-if="showBox">
+        <ul>
+          <li v-for="item in filteredBooks" :class="item.isFav && 'fav' " @click="handleBg(item)">
+            <img :src="item.img" :alt="item.title" />
+            <p>{{item.title}} => {{item.author}}</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
