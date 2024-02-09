@@ -6,7 +6,8 @@
       "slug": "vue-js-2-0",
       "body": "Vue.js 2.0 is the latest version of Vue.js. It is a progressive JavaScript framework for building user interfaces. It is based on the model–view–controller (MVC) architecture, which is the basis of modern web development.",
       "created_at": "2020-01-01 00:00:00",
-      "updated_at": "2020-01-01 00:00:00"
+      "updated_at": "2020-01-01 00:00:00",
+      "tags": ["web", "javascript", "vue"]
     },
     {
       "id": 2,
@@ -14,7 +15,8 @@
       "slug": "vue-js-2-0",
       "body": "Vue.js 2.0 is the latest version of Vue.js. It is a progressive JavaScript framework for building user interfaces. It is based on the model–view–controller (MVC) architecture, which is the basis of modern web development.",
       "created_at": "2020-01-01 00:00:00",
-      "updated_at": "2020-01-01 00:00:00"
+      "updated_at": "2020-01-01 00:00:00",
+      "tags": ["web", "javascript", "vue"]
     },
     {
       "id": 3,
@@ -22,7 +24,8 @@
       "slug": "vue-js-2-0",
       "body": "Vue.js 2.0 is the latest version of Vue.js. It is a progressive JavaScript framework for building user interfaces. It is based on the model–view–controller (MVC) architecture, which is the basis of modern web development.",
       "created_at": "2020-01-01 00:00:00",
-      "updated_at": "2020-01-01 00:00:00"
+      "updated_at": "2020-01-01 00:00:00",
+      "tags": ["web", "javascript", "vue"]
     }
   ]
 }
